@@ -13,7 +13,7 @@ $ yarn add module-alias
   $ yarn add -D @types/module-alias
 
 # add eslint plugin e parser
-yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
+$ yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
 
 # Nosso package.json deve ter os seguintes scirpts até o momento:
 "scripts": {
@@ -25,7 +25,15 @@ yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
     "test": "echo \"Error: no test specified\" && exit 1"
 },
 
-
 # add ts-node-dev para escutar os arquivos e recompilar apenas o que sofreu mudanças (tipo um repl)
   ## adicionar em package.json > scripts => "start:dev": "ts-node-dev 'src/index.ts'"
-yarn add -D ts-node-dev
+$ yarn add -D ts-node-dev
+
+# add jest
+$ yarn add -D jest ts-jest @types/jest
+
+# add supertest
+yarn add -D supertest @types/supertest
+
+# add em scripts no package.json
+"test:functional": "jest --projects ./test --forceExit --runInBand"
