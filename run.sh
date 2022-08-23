@@ -36,4 +36,12 @@ $ yarn add -D jest ts-jest @types/jest
 yarn add -D supertest @types/supertest
 
 # add em scripts no package.json
+# o --runInBand força os testes funcionais serem rodados em sequência ordenada, por padrão o jest roda arquivos
+# de teste em paralelo(teste de unidade não precisa sem em ordem)
 "test:functional": "jest --projects ./test --forceExit --runInBand"
+
+# add express and body-parser and onernight
+$ yarn add express body-parser @overnightjs/core
+
+# add @types/express para ambiente de desenvolvimento
+$ yarn add -D @types/express
