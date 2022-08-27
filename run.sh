@@ -47,4 +47,8 @@ $ yarn add express body-parser @overnightjs/core
 $ yarn add -D @types/express
 
 # add Prettier para forçarmos um padrão de escrita no código, necessário apenas em ambiente de desenvolvimento
-yarn add -D prettier
+$ yarn add -D prettier
+
+# add axios e @types/axios
+$ yarn add axios
+  $ yarn add -D @types/axios
