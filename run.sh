@@ -40,6 +40,9 @@ yarn add -D supertest @types/supertest
 # de teste em paralelo(teste de unidade não precisa sem em ordem)
 "test:functional": "jest --projects ./test --forceExit --runInBand"
 
+# rodar a aplicação em modo de teste
+$ yarn test:unit --watch
+
 # add express and body-parser and onernight
 $ yarn add express body-parser @overnightjs/core
 
@@ -52,3 +55,7 @@ $ yarn add -D prettier
 # add axios e @types/axios
 $ yarn add axios
   $ yarn add -D @types/axios
+
+# add módulo externo node config
+$ yarn add config
+  $ yarn add -D @types/config
