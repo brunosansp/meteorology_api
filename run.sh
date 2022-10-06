@@ -59,3 +59,14 @@ $ yarn add axios
 # add módulo externo node config
 $ yarn add config
   $ yarn add -D @types/config
+
+# add mongoose and types/mongoose in dev
+  $ yarn add mongoose
+  "module-alias": "^2.2.2",
+  "mongoose": "^6.1.4"
+
+  $ yarn add -D @types/mongoose
+
+# add nock => Biblioteca do Node que intercepta requisições e permite responder a elas como você quer.
+$ yarn add -D nock @types/nock
+  "nock": "^13.2.1",
