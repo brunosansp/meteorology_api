@@ -8,13 +8,16 @@ export interface TimeForecast {
   time: string;
   forecast: BeachForecast[];
 }
+
 export class ForecastProcessingInternalError extends InternalError {
   constructor(message: string) {
     super(`Unexpected error during the forecast processing: ${message}`);
   }
 }
+
 export class Forecast {
   constructor(protected stormGlass = new StormGlass()) {}
+
   public async processForecastForBeaches(
     beaches: Beach[]
   ): Promise<TimeForecast[]> {
@@ -30,6 +33,7 @@ export class Forecast {
       throw new ForecastProcessingInternalError((error as Error).message);
     }
   }
+
   private mapForecastByTime(forecast: BeachForecast[]): TimeForecast[] {
     const forecastByTime: TimeForecast[] = [];
     for (const point of forecast) {
@@ -45,6 +49,7 @@ export class Forecast {
     }
     return forecastByTime;
   }
+
   private enrichBeachData(
     points: ForecastPoint[],
     beach: Beach
