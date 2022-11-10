@@ -67,6 +67,9 @@ $ yarn add config
 
   $ yarn add -D @types/mongoose
 
+# rodando imagem docker do mongoose, precisa do docker instalado na máquina
+  $ docker run -p 27017:27017 -d mongo
+
 # add nock => Biblioteca do Node que intercepta requisições e permite responder a elas como você quer.
 $ yarn add -D nock @types/nock
   "nock": "^13.2.1",
