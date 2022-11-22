@@ -73,3 +73,7 @@ $ yarn add config
 # add nock => Biblioteca do Node que intercepta requisições e permite responder a elas como você quer.
 $ yarn add -D nock @types/nock
   "nock": "^13.2.1",
+
+# add bcrypt para encriptação usando hash
+yarn add bcrypt
+  yarn add @types/bcrypt
