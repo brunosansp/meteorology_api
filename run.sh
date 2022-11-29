@@ -1,19 +1,19 @@
 # create project
-$ npm init
+npm init
 
 # add typescript
-$ yarn add -D typescript
+yarn add -D typescript
 
 # add types node em ambiente de DEV
-$ yarn add -D @types/node
+yarn add -D @types/node
 
 # add module-alias para fazer os paths que estarão no tsconfig.json funcionarem
-$ yarn add module-alias
+yarn add module-alias
   ## add types do module-alias em ambiente de DEV
-  $ yarn add -D @types/module-alias
+  yarn add -D @types/module-alias
 
 # add eslint plugin e parser
-$ yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
+yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
 
 # Nosso package.json deve ter os seguintes scirpts até o momento:
 "scripts": {
@@ -27,10 +27,10 @@ $ yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
 
 # add ts-node-dev para escutar os arquivos e recompilar apenas o que sofreu mudanças (tipo um repl)
   ## adicionar em package.json > scripts => "start:dev": "ts-node-dev 'src/index.ts'"
-$ yarn add -D ts-node-dev
+yarn add -D ts-node-dev
 
 # add jest
-$ yarn add -D jest ts-jest @types/jest
+yarn add -D jest ts-jest @types/jest
 
 # add supertest
 yarn add -D supertest @types/supertest
@@ -41,39 +41,46 @@ yarn add -D supertest @types/supertest
 "test:functional": "jest --projects ./test --forceExit --runInBand"
 
 # rodar a aplicação em modo de teste
-$ yarn test:unit --watch
+yarn test:unit --watch
 
 # add express and body-parser and onernight
-$ yarn add express body-parser @overnightjs/core
+yarn add express body-parser @overnightjs/core
 
 # add @types/express para ambiente de desenvolvimento
-$ yarn add -D @types/express
+yarn add -D @types/express
 
 # add Prettier para forçarmos um padrão de escrita no código, necessário apenas em ambiente de desenvolvimento
-$ yarn add -D prettier
+yarn add -D prettier
 
 # add axios e @types/axios
-$ yarn add axios
-  $ yarn add -D @types/axios
+yarn add axios
+  yarn add -D @types/axios
 
 # add módulo externo node config
-$ yarn add config
-  $ yarn add -D @types/config
+yarn add config
+  yarn add -D @types/config
 
 # add mongoose and types/mongoose in dev
-  $ yarn add mongoose
+  yarn add mongoose
   "module-alias": "^2.2.2",
   "mongoose": "^6.1.4"
 
-  $ yarn add -D @types/mongoose
+  yarn add -D @types/mongoose
 
 # rodando imagem docker do mongoose, precisa do docker instalado na máquina
-  $ docker run -p 27017:27017 -d mongo
+  docker run -p 27017:27017 -d mongo
+    # verificar status do docker
+      sudo service docker status
+    # startar o serviço do docker se necessário
+      sudo service docker start
 
 # add nock => Biblioteca do Node que intercepta requisições e permite responder a elas como você quer.
-$ yarn add -D nock @types/nock
+yarn add -D nock @types/nock
   "nock": "^13.2.1",
 
 # add bcrypt para encriptação usando hash
 yarn add bcrypt
   yarn add @types/bcrypt
+
+# add jsonwebtoken and types
+  yarn add jsonwebtoken
